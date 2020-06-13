@@ -55,7 +55,7 @@ def report():
             telegram_bot_sendtext("And to wish you unlimited luck today, here's a good morning gif!", x)
         elif lucky==1:
             telegram_bot_sendtext("And today, you're going to be very happy as a good morning image is here waiting for you!", x)
-schedule.every().day.at("06:30").do(report)
+schedule.every().day.at("09:00").do(report)
 def main():
     update_id = last_update(get_updates_json(url))['update_id']
     while True:
